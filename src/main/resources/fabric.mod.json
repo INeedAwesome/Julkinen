@@ -1,25 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "wannabright",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Wanna Bright",
+  "description": "This is my mod where you can change the brightness, all the way to no shadows!",
   "authors": [
-    "Me!"
+    "INeedAwesome"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/INeedAwesome/WannaBright",
+    "issues": "https://github.com/INeedAwesome/WannaBright/issues"
   },
 
   "license": "CC0-1.0",
   "icon": "assets/modid/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "site.gr8.mattis.WannaBright"
     ]
   },
   "mixins": [
