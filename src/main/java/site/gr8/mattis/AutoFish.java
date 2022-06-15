@@ -5,6 +5,8 @@ import net.minecraft.util.Hand;
 
 public class AutoFish {
 
+	public static boolean autoFish = false;
+
 	public static int recastRod = -1;
 
 	public static void tick(MinecraftClient client) {

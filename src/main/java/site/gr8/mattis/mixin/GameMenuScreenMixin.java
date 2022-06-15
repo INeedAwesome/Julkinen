@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import site.gr8.mattis.INeedAwesomeScreen;
 
 @Mixin(GameMenuScreen.class)
 public class GameMenuScreenMixin extends Screen {
@@ -18,10 +19,9 @@ public class GameMenuScreenMixin extends Screen {
 
 	@Inject(method = "initWidgets", at = @At("TAIL"))
 	private void initWidgets(CallbackInfo info) {
-		this.addDrawableChild(new ButtonWidget(10, 10, this.width / 8, (int)(this.width / 4.5),
-				Text.of("INeedAwesome's Mod"), button -> {
-
-
+		this.addDrawableChild(new ButtonWidget(10, 10, 100, 20,
+				Text.of("INeedAwesome"), button -> {
+			this.client.setScreen(new INeedAwesomeScreen());
 		}));
 	}
 

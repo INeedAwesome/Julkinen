@@ -25,7 +25,7 @@ public class FishingBobberEntityMixin {
 		MinecraftClient client = MinecraftClient.getInstance();
 		ClientPlayerInteractionManager manager = client.interactionManager;
 
-		if (caughtFish) {
+		if (caughtFish && AutoFish.autoFish) {
 			if (manager != null) {
 				AutoFish.setRecastRod(20);
 				manager.interactItem(client.player, Hand.MAIN_HAND);

@@ -19,6 +19,7 @@ public class WannaBright implements ClientModInitializer {
 
 	private void onEndTick(MinecraftClient minecraftClient) {
 		AutoFish.tick(minecraftClient);
+		AutoRun.tick();
 	}
 
 

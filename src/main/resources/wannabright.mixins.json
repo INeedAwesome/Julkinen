@@ -7,7 +7,8 @@
   ],
   "client": [
     "FishingBobberEntityMixin",
-    "GameMenuScreenMixin"
+    "GameMenuScreenMixin",
+    "KeyboardInputMixin"
   ],
   "injectors": {
     "defaultRequire": 1
