@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "wannabright",
+  "id": "julkinen",
   "version": "${version}",
 
-  "name": "Wanna Bright",
-  "description": "This is my mod where you can change the brightness, all the way to no shadows!",
+  "name": "Julkinen",
+  "description": "This is my mod, it's like utils for mc.",
   "authors": [
-    "INeedAwesome"
+    "INeedAwesome",
+    "Mattis Kjellerås"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -15,16 +16,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/wannabright/icon.png",
+  "icon": "assets/julkinen/icon.png",
 
   "environment": "client",
   "entrypoints": {
     "client": [
-      "site.gr8.mattis.WannaBright"
+      "site.gr8.mattis.Julkinen"
     ]
   },
   "mixins": [
-    "wannabright.mixins.json"
+    "Julkinen.mixins.json"
   ],
 
   "depends": {

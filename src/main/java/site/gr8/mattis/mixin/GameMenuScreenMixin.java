@@ -21,7 +21,7 @@ public class GameMenuScreenMixin extends Screen {
 	private void initWidgets(CallbackInfo info) {
 		this.addDrawableChild(new ButtonWidget(10, 10, 100, 20,
 				Text.of("INeedAwesome"), button -> {
-			this.client.setScreen(new INeedAwesomeScreen());
+			this.client.setScreen(new INeedAwesomeScreen(this));
 		}));
 	}
 
