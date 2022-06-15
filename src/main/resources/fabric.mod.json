@@ -15,16 +15,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/wannabright/icon.png",
 
   "environment": "client",
   "entrypoints": {
-    "main": [
+    "client": [
       "site.gr8.mattis.WannaBright"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "wannabright.mixins.json"
   ],
 
   "depends": {
