@@ -5,15 +5,14 @@ import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 
-public class INeedAwesomeScreen extends Screen {
+public class JulkinenScreen extends Screen {
 
-	private Screen parent;
+	private final Screen parent;
 
-	private int buttonWidth = 200;
-	private int smallerButtonWidth = 150;
-	private int buttonHeight = 20;
+	private final int buttonWidth = 200;
+	private final int buttonHeight = 20;
 
-	public INeedAwesomeScreen(Screen parent) {
+	public JulkinenScreen(Screen parent) {
 		super(Text.of("Julkinen options"));
 		this.parent = parent;
 	}
