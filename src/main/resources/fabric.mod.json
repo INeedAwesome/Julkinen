@@ -6,13 +6,12 @@
   "name": "Julkinen",
   "description": "This is my mod, it's like utils for mc.",
   "authors": [
-    "INeedAwesome",
-    "Mattis Kjellerås"
+    "INeedAwesome"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/INeedAwesome/WannaBright",
-    "issues": "https://github.com/INeedAwesome/WannaBright/issues"
+    "sources": "https://github.com/INeedAwesome/Julkinen",
+    "issues": "https://github.com/INeedAwesome/Julkinen/issues"
   },
 
   "license": "CC0-1.0",
@@ -25,7 +24,7 @@
     ]
   },
   "mixins": [
-    "Julkinen.mixins.json"
+    "julkinen.mixins.json"
   ],
 
   "depends": {

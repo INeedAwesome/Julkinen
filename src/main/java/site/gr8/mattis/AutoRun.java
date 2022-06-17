@@ -7,7 +7,6 @@ public class AutoRun {
 	public static void tick() {
 		while (Julkinen.runKey.wasPressed()) {
 			run = !run;
-			Julkinen.LOGGER.info("Pressed run run="+run);
 		}
 	}
 }
