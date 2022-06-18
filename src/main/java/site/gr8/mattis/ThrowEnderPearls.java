@@ -5,11 +5,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.dedicated.DedicatedServer;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.world.World;
 
 public class ThrowEnderPearls {
 
@@ -18,17 +14,18 @@ public class ThrowEnderPearls {
 			PlayerInventory inventory = client.player.getInventory();
 			if (client.isInSingleplayer()) {
 				MinecraftServer server = client.getServer();
+				if (server == null) return;
 				ServerPlayerEntity player = server.getPlayerManager().getPlayer(client.player.getUuid());
 				dropEnderPearlsSinglePlayer(inventory, player);
 			}
 			else {
 
-				//  ------ not working !! ----------
-				//  server is null
-				//  --------------------------------
+				//  --------- not working ---------
+				//  |		server is null
+				//  -------------------------------
 
-				//MinecraftServer server = client.getServer();
-				//DedicatedServer dedicatedServer = (DedicatedServer) client.player.getServer();
+				// TODO: 2022-06-18 Get an instance of minecraft server so that i can get ServerEntityPlayer.
+				//MinecraftServer server = Julkinen.server;
 				//ServerPlayerEntity serverPlayer = server.getPlayerManager().getPlayer(client.player.getUuid());
 				//dropEnderPearlServer(inventory, serverPlayer);
 			}

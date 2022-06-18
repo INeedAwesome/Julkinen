@@ -33,15 +33,14 @@ public class Julkinen implements ClientModInitializer {
 				"category.julkinen.title"
 		));
 
-		ClientTickEvents.END_CLIENT_TICK.register(this::onEndTick);
+		ClientTickEvents.END_CLIENT_TICK.register(this::onClientEndTick);
 	}
 
-	private void onEndTick(MinecraftClient minecraftClient) {
+	private void onClientEndTick(MinecraftClient minecraftClient) {
 		AutoFish.tick(minecraftClient);
 		AutoRun.tick();
 		ThrowEnderPearls.tick(minecraftClient);
 
 	}
-
 
 }
