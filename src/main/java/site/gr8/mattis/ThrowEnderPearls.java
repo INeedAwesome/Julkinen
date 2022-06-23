@@ -11,12 +11,13 @@ public class ThrowEnderPearls {
 
 	public static void tick(MinecraftClient client) {
 		while (Julkinen.throwEnderPearlsKey.wasPressed()) {
-			PlayerInventory inventory = client.player.getInventory();
+			//PlayerInventory inventory = client.player.getInventory();
 			if (client.isInSingleplayer()) {
+			/*	if (client.getServer() == null) return;
 				MinecraftServer server = client.getServer();
-				if (server == null) return;
 				ServerPlayerEntity player = server.getPlayerManager().getPlayer(client.player.getUuid());
 				dropEnderPearlsSinglePlayer(inventory, player);
+			 */
 			}
 			else {
 
